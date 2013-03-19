@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regin Demo</title>
+    <script src="http://modules.spmjs.org/seajs/1.3.1/sea.js"></script>
+    <script>
+        seajs.use("../src/region", function(Region){
+            var region = new Region({
+                "target" : ".region-box"
+            });
+
+            region.init([14, 162,0]);
+
+            region.on("selected", function(){
+                console.log(arguments);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="region-box"></div>
+
+</body>
+</html>
