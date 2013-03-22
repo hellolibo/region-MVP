@@ -6,7 +6,7 @@ define(function (require, exports, module) {
     var Model = require("./region-model");
     var View = require("./region-view");
 
-    require("./skin.css");
+    require("./skin_CSS3.css");
 
     var Region = function (options) {
         var self = this;
